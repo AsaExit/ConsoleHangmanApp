@@ -7,6 +7,6 @@ namespace ConsoleHangmanApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-        }
-    }
-}
+        }// End of Main
+    }// End of Class
+}//  End of namespace
