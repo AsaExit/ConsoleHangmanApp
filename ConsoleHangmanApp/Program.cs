@@ -34,11 +34,11 @@ namespace ConsoleHangmanApp
                         break;
                     case "3":
                         keepLooping = false;
-                        Console.WriteLine("Thanks for your time program.");
+                        Console.WriteLine(" Thanks for your time and we hope you would liked the Hangman");
                         break;
                  
                     default:
-                        Console.WriteLine("Incorrect Menu Selection!");
+                        Console.WriteLine(" Incorrect Menu Selection!");
                         break;
                 }
                 PressToContinue();
@@ -73,7 +73,7 @@ namespace ConsoleHangmanApp
             Console.WriteLine($" The word { wordToGuess}");  // debugging random word display
             Console.WriteLine("\nEnter your name:\n");
             playerName = Console.ReadLine();
-            Console.WriteLine($"\nHello and Welcome {playerName} to play the HANGMAN");
+            Console.WriteLine($"\nHello and Welcome {playerName} for playing the HANGMAN");
 
             int guessCount = 10;
             bool won = false;
@@ -91,7 +91,7 @@ namespace ConsoleHangmanApp
 
                 if (correctGuesses.Contains(guess)) 
                 {
-                    Console.WriteLine("You have already tried and it was correct!" + guess);
+                    Console.WriteLine("You have guessed and it was correct!" + guess);
                     continue;
                 }
                 else if (incorrectGuesses.Contains(guess))
@@ -148,5 +148,6 @@ namespace ConsoleHangmanApp
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey(true);
         }
+
      }// End of Class
 }// End of namespace
