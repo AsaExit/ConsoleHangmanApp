@@ -27,7 +27,7 @@ namespace ConsoleHangmanApp
 
             Console.WriteLine("\n------------------HANGMAN-------------------------");
             Console.WriteLine($" The word { wordToGuess}");  // debugging random word display
-            Console.WriteLine("\nEnter your name:");
+            Console.WriteLine("\nEnter your name:\n");
             playerName = Console.ReadLine();
             Console.WriteLine($"\nHello and Welcome {playerName} to play the HANGMAN");
 
@@ -47,12 +47,12 @@ namespace ConsoleHangmanApp
 
                 if (correctGuesses.Contains(guess))
                 {
-                    Console.WriteLine("You have already tried '{0}', and it was correct!" + guess);
+                    Console.WriteLine("You have already tried  and it was correct!" + guess);
                     continue;
                 }
                 else if (incorrectGuesses.Contains(guess))
                 {
-                    Console.WriteLine("You have already tried '{0}', and it was WRONG!" + guess);
+                    Console.WriteLine("You have already tried and it was WRONG!" + guess);
                     continue;
                 }
                 if (wordToGuessUppercase.Contains(guess))
@@ -86,7 +86,7 @@ namespace ConsoleHangmanApp
             if (won)
                 Console.WriteLine("----You won!-----");
             else
-                Console.WriteLine(" We ar so sorry!You lost! It was '{0}'", wordToGuess);
+                Console.WriteLine(" We ar so sorry!You lost! It was ", wordToGuess);
 
             Console.Write("Press ENTER to exit...");
             Console.WriteLine(" End of line");
