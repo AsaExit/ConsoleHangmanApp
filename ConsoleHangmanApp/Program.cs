@@ -47,7 +47,7 @@ namespace ConsoleHangmanApp
 
                 if (correctGuesses.Contains(guess))
                 {
-                    Console.WriteLine("You have already tried  and it was correct!" + guess);
+                    Console.WriteLine("You have already tried and it was correct!" + guess);
                     continue;
                 }
                 else if (incorrectGuesses.Contains(guess))
