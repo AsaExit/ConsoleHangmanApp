@@ -34,7 +34,7 @@ namespace ConsoleHangmanApp
                         break;
                     case "3":
                         keepLooping = false;
-                        Console.WriteLine("Thanks for your time program.");
+                        Console.WriteLine("Thanks for your time and we hope you would liked the Hangman");
                         break;
                  
                     default:
@@ -73,7 +73,7 @@ namespace ConsoleHangmanApp
             Console.WriteLine($" The word { wordToGuess}");  // debugging random word display
             Console.WriteLine("\nEnter your name:\n");
             playerName = Console.ReadLine();
-            Console.WriteLine($"\nHello and Welcome {playerName} to play the HANGMAN");
+            Console.WriteLine($"\nHello and Welcome {playerName} for playing the HANGMAN");
 
             int guessCount = 10;
             bool won = false;
